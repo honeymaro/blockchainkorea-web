@@ -48,6 +48,7 @@
         position: fixed;
         background-color: #21232a;
         color: #ffffff;
+        z-index: 505050;
     }
     .header .container {
         height: 100%;
