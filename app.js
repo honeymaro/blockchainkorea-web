@@ -22,6 +22,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+var pages = require("node-github-pages")(app, {
+  static: "public"
+});
+pages.renderFiles([{ "view": "index", "url": "", "options": {} }])
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
