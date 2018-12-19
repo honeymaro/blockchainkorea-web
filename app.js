@@ -25,15 +25,41 @@ app.use('/users', usersRouter);
 var pages = require("node-github-pages")(app, {
   static: "public"
 });
-pages.renderFiles([{ "view": "index", "url": "", "options": {} }])
+pages.renderFiles([
+  {
+    "view": "index",
+    "url": "",
+    "options": { legal_info: false }
+  },
+  {
+    "view": "about",
+    "url": "/about",
+    "options": { legal_info: false }
+  },
+  {
+    "view": "partners",
+    "url": "/partners",
+    "options": { legal_info: false }
+  },
+  {
+    "view": "funding",
+    "url": "/funding",
+    "options": { legal_info: true }
+  },
+  {
+    "view": "contact",
+    "url": "/contact",
+    "options": { legal_info: true }
+  }
+])
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

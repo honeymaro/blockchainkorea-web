@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo');
 @media screen {
     * {
         margin: 0px;
@@ -72,9 +73,42 @@
     }
     .header .header-left {
         left: 0;
+        height: 100%;
     }
     .header .header-right {
         right: 0;
+        height: 100%;
+    }
+    .header .header-logo {
+        width: 200px;
+        height: 100%;
+        background-image: url(/img/logo-white-fit.png);
+        background-position: 0 50%;
+        background-size: auto 60%;
+        background-repeat: no-repeat;
+    }
+    .header .header-menu {
+        width: auto;
+        height: 100%;
+        position: relative;
+    }
+    .header .header-menu a {
+        width: auto;
+        height: 60px;
+        position: relative;
+        line-height: 60px;
+        display: inline-block;
+        padding: 0 1em;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .section {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-size: cover;
+        background-position: 50% 45%;
+        background-repeat: no-repeat;
     }
     .container {
         width: 94%;
@@ -105,14 +139,14 @@
     }
     .text-title {
         font-size: 1.875em;
-        font-weight: 500;
+        font-weight: 700;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
         letter-spacing: normal;
         color: #000000;
     }
-    .text-article{
+    .text-article {
         font-size: 1.5em;
         font-weight: normal;
         font-style: normal;
@@ -122,8 +156,8 @@
         text-align: justify;
         color: #21232a;
     }
-    .text-serif{
-        font-family: serif;
+    .text-serif {
+        font-family: 'Aleo', 'TimesNewRomanPSMT', serif;
     }
     .text-footer {
         font-size: 0.875em;
