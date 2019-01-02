@@ -1,13 +1,13 @@
 <div class="footer">
+    <div class="v-padding-2"></div>
     <div class="container">
-        <div class="v-padding-2"></div>
         <span class="text-footer">
             Copyright © 2018 Blockchain Korea, INC.<br>
             All rights reserved.
         </span>
-        <div class="v-padding-4"></div>
     </div>
-    <% if( legal_info ) { %>
+    <div class="v-padding-2"></div>
+    <% if( legal_info || !legal_info ) { %>
     <div class="container" style="color: #4e5465;">
         <div class="partition partition-6">
             This site and all of its contents, including all text and images, (collectively "Content") are
@@ -38,6 +38,7 @@
         </div>
         <div class="clearfix"></div>
     </div>
+    <div class="v-padding-4"></div>
     <% } %>
 </div>
 <script src="/js/common.js"></script>

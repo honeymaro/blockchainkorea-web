@@ -21,4 +21,15 @@ $(document).ready(function(){
     });
 
     $(window).resize();
+    $("body").on("click", function(e){
+        if($(".header").has(e.target).length <= 0){
+            $(".header-menu").removeClass("show");
+        }
+    });
+
+    $("body").on("click", ".header-more", function(e){
+        e.preventDefault();
+        $(".header-menu").toggleClass("show");
+    });
+
 });
