@@ -84,12 +84,13 @@
         height: 100%;
     }
     .header .header-logo {
-        width: 200px;
+        width: 152px;
         height: 100%;
         background-image: url(/img/logo-white-fit.png);
         background-position: 0 50%;
         background-size: auto 60%;
         background-repeat: no-repeat;
+        display: inline-block;
     }
     .header .header-menu {
         width: auto;
